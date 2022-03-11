@@ -150,18 +150,14 @@ const showPosts = posts => {
 	});
 };
 
-// const displayLikedPosts = () => {
-// 	const likedPosts = getLikedPosts();
-// 	likedPosts.forEach(post => {
-// 		const div = createPost(post);
-// 		document.getElementById("liked").appendChild(div);
-// 	});
-// };
-
 const displayLikedPosts = () => {
 	const likedPosts = getLikedPosts();
 	const likedPostsContainer = document.getElementById("liked");
 	likedPostsContainer.innerHTML = "";
+
+	likedPostsContainer.innerHTML = `
+    <h1>Liked Post</h1>
+  `;
 
 	likedPosts.forEach(post => {
 		const div = createPost(post);
@@ -172,6 +168,10 @@ const displayLikedPosts = () => {
 const displayReportedPosts = () => {
 	const reportPostContainer = document.getElementById("reported");
 	reportPostContainer.innerHTML = "";
+
+	reportPostContainer.innerHTML = `
+    <h1>Report Post</h1>
+  `;
 
 	const reportedPosts = getReportedPosts();
 	reportedPosts.forEach(post => {
