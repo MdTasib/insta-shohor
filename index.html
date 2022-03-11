@@ -88,8 +88,92 @@
 				<h1>Reported posts</h1>
 			</div>
 		</main>
+
+		<!--  -->
+		<section class="container py-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button
+									class="accordion-button"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseOne"
+									aria-expanded="true"
+									aria-controls="collapseOne"
+								>
+									How does javascript work ?
+								</button>
+							</h2>
+							<div
+								id="collapseOne"
+								class="accordion-collapse collapse show"
+								aria-labelledby="headingOne"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<strong>Javascript</strong> is a high-level object-oriented,
+									multi-paradigm programming language.
+									<strong>JavaScript</strong> is a scripting language that is
+									used within the browser for interface interaction. In order
+									for it to run, a web developer has to place a JavaScript code
+									on to HTML pages. When a user requests a HTML page with
+									JavaScript in it, the script is then sent to the user’s
+									browser and the Internet browser deals with it from then on.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree"
+								>
+									Local storage vs session storage ?
+								</button>
+							</h2>
+							<div
+								id="collapseThree"
+								class="accordion-collapse collapse"
+								aria-labelledby="headingThree"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<strong>Local storage</strong> and
+									<strong>session storage</strong> are mainly used to store data
+									in the browser. Local storage and session storage are almost
+									the same. The main difference between that the local storage
+									data does not expire. But the session storage expires. And
+									when the session expires, the session storage data is cleared.
+									Session Storage data are gone when you close the browser tab.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 text-end">
+					<img
+						src="https://anyforsoft.com/static/499c1cef78f951c9ef3892b69a9b0416/js-animation.gif"
+						alt=""
+					/>
+				</div>
+			</div>
+		</section>
+		<!--  -->
 		<footer></footer>
 
+		<!-- bootstrap js -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
 		<!-- add javascript  file  -->
 		<script src="./js/app.js"></script>
 	</body>
